@@ -561,13 +561,26 @@ max-width: 700px;
     max-width: 800px; /* Limit the width */
     margin: 0 auto; /* Center the column */
 }
-
+.form-welcoming{
+    text-align: center;
+    }
+    body .feedback{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        height: 100%;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(250.55deg, #009CDE 15%, #0074d4 28.55%, #0791dd 90.55%);
+        color: white;
+    }
 form{
     height: 80vh;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 45%;
+    position: relative;
+    right: 100px;
  }
  
 
@@ -576,11 +589,11 @@ fieldset{
     width: 800px;
     padding: 15px;
     margin: 20px;
+    margin-left: 200px;
     border: 2px solid #ba4040;
     background-color: rgba(123, 191, 218, 0.292);
 
 }
-
 button{
     background-color: #D50000; /* Red background */
     color: white; /* White text */
@@ -603,19 +616,20 @@ button{
     height: 1px;
     width: 200px;
     font-size: 12px;
-    right: 30px;
     line-height: 1.4;
 }
 
 label.blockLable {
-    display: flex; 
-    align-items: center; 
-    margin-bottom: 20px; 
-    margin-left: 20px;
+    display: flex; /* Use flex for layout */
+    align-items: center; /* Align items to the center */
+    margin: 0px 0px 0px 0px; /* Space below each field */
 }
 
+
+/* Remove absolute positioning for the input */
 label.blockLable input {
-    width: 200px; 
+    /* No need for position or right properties */
+    width: 200px; /* Full width */
 }
 
 input[ type="radio"]{
@@ -650,9 +664,10 @@ input[type="radio"]:checked + label.radio {
 input[type="radio"]:checked + label.radio::before {
     background-color: white;
     border: 0.4em solid white;
-    box-shadow: inset 0 0 0 0.4em rgb(162, 209, 216);
+    box-shadow: inset 0 0 0 0px rgb(162, 209, 216);
 }
 .Quotation {
+    display: inline-block; /* Ensures normal text flow */
     position: relative;
     z-index: 2;
     font-family: "Londrina Solid", sans-serif;
@@ -660,39 +675,54 @@ input[type="radio"]:checked + label.radio::before {
     font-weight: bold;
     background: none;
     text-align: left;
-    margin-bottom: 70px;
-    margin-left: 10px;
+    white-space: normal; /* Prevents extra spaces */
+    letter-spacing: normal;
+    margin: 10px 10px 10px 10px ;
     text-shadow: 1px 1px 0px white, 
                  2px 2px 0px white, 
-                 3px 3px 0px white; 
+                 3px 3px 0px white; /* Simplified text-shadow for clarity */
 }
 
-.NameEmail {
+
+
+.name-email {
     font-family: "Londrina Solid", sans-serif;
     color: #ba4040;
     font-weight: bold;
-    text-align: left; 
-    margin-bottom: 10px; 
+    text-align: left; /* محاذاة النص إلى اليسار */
+    margin-bottom: 10px; /* مسافة أسفل النص */
+    margin-left: 20px;
     text-shadow: 1px 1px 0px white, 
                  2px 2px 0px white, 
-                 3px 3px 0px white; 
+                 3px 3px 0px white; /* Simplified text-shadow for clarity */
 }
 
+.Containerfed{
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: left;
+    text-align: right;
+    margin-left: 40px;
+    margin-top: 20px;
+  
+}
+#FullName{
+   margin-left:40px ; 
+}
+#email{
+    margin-left:70px 
+}
 .divbody{
     margin: 0;
     padding: 0;
-    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 200vhl;
     font-family: 'Poppons', sans-serif;
 }
-.Container{
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-}
+
 .divcheck {
 margin: 10px;
 }
@@ -752,18 +782,14 @@ background-color: #eeee;
 
 }
 .dropdown{
-    margin: 0;
-    padding: 0;
+    margin: 0px 20px 10px 150px;
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
     position: relative;
-   
-    margin-bottom: 10px;
-    margin-left: 150px;
     width: 300px;
     height: 50px;
-
-
+    padding: auto;
+    
 }
 .dropdown::before{
     content: '';
@@ -796,7 +822,7 @@ background-color: #eeee;
     border: none;
     outline: none;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05) ;
-    padding: 0px 0px;
+    padding: 0px 0px 0px 10px;
     border-radius: 10px;
 }
 .dropdown .option {
@@ -833,6 +859,7 @@ i{
     position: relative;
     font-size: 1.2em;
 }
+
 
 
 /* Schedule Page */

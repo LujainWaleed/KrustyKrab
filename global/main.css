@@ -1,9 +1,10 @@
 /* General Styles */
+/* Existing Styles */
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* يمنع التمدد الزائد أفقياً */
+    overflow-x: hidden; 
     display: flex;
     flex-direction: column;
 }
@@ -15,7 +16,6 @@ body {
     background: linear-gradient(250.55deg, #009CDE 15%, #0074d4 28.55%, #0791dd 90.55%);
     color: white;
     text-align: justify;
-    
 }
 
 /* Header */
@@ -46,8 +46,7 @@ header {
     opacity: 0.8;
 }
 
-.ann{
-   
+.ann {
     display: flex;
     position: absolute;
     top: 30px;
@@ -56,15 +55,14 @@ header {
     align-items: center;
     gap: 50px;
     flex-grow: 1;
-
 }
+
 /* Nav Links */
 .navlinks {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px; 
-    
 }
 
 .navlinks a {
@@ -106,8 +104,6 @@ header {
     text-align: right;
     max-width: 1000px;
     margin-left: 400px;
-    
-
 }
 
 .krusty-img {
@@ -118,18 +114,14 @@ header {
     margin-left: -150px;
     margin-top: -250px;
     animation: float 3s linear infinite;
-
 }
 
-@keyframes float{
-    0%, 70%{
+@keyframes float {
+    0%, 70% {
         transform: translateY(0rem);
-
     }
-
-    70%{
+    70% {
         transform: translateY(0.5rem);
-
     }
 }
 
@@ -151,8 +143,6 @@ header {
     left: 90px; /* Moves the text to the right without affecting layout size */
 }
 
-
-
 .content h2 {
     font-size: 40px;
     font-family: "Big Shoulders", sans-serif;
@@ -168,15 +158,16 @@ header {
     font-weight: bold;
     font-family: "Londrina Solid", sans-serif;
     font-size: 45px;
-    text-shadow: 1px 1px 0px white,2px 2px 0px white,3px 3px 0px white,2px 2px 0px white,1px 1px 0px white
+    text-shadow: 1px 1px 0px white, 2px 2px 0px white, 3px 3px 0px white, 2px 2px 0px white, 1px 1px 0px white;
 }
+
 .explore-link {
     display: flex; /* Keep it inline-block for button-like behavior */
     margin: none; /* Center horizontally */
     text-decoration: underline;
     color: #b14646; /* Primary color */
-    right:1055px;
-    top:265px;
+    right: 1055px;
+    top: 265px;
     font-weight: bold;
     transition: color 0.3s ease; /* Smooth color transition */
     position: relative; /* Change to relative */
@@ -188,9 +179,6 @@ header {
     color: #ba4040; /* تغيير اللون إلى الأحمر عند التمرير فوق الرابط */
 }
 
-
-
-
 /* Cart Icon */
 .cart-icon {
     position: absolute; /* يمكن التحكم في موقعها داخل الـ header */
@@ -200,7 +188,6 @@ header {
     font-size: 35px; /* حجم الأيقونة */
     cursor: pointer;
     z-index: 10; /* التأكد من ظهور الأيقونة فوق باقي العناصر */
-    
 }
 
 .cart-icon a {
@@ -217,37 +204,10 @@ header {
     color: #ba4040; /* تغيير اللون عند المرور بالأيقونة */
 }
 
-
-.profile {
-    position: absolute; /* يمكن التحكم في موقعها داخل الـ header */
-    top: 50%; /* محاذاة عمودية في المنتصف */
-    right: 180px; /* تغيير المسافة لتقريب الأيقونة من اليمين */
-    transform: translateY(-50%); /* لتوسيط الأيقونة عموديًا */
-    font-size: 35px; /* حجم الأيقونة */
-    cursor: pointer;
-    z-index: 10; /* التأكد من ظهور الأيقونة فوق باقي العناصر */
-    
-}
-
-.profile a {
-    display: inline-block;
-    text-decoration: none;
-}
-
-.profile i {
-    color: white; /* اللون الأساسي */
-    transition: color 0.3s ease; /* تأثير التغيير عند التمرير */
-    
-}
-
-.profile:hover i {
-    color: #ba4040; /* تغيير اللون عند المرور بالأيقونة */
-}
-
 .flower1 {
     position: absolute;
     left: 10px;
-    top:300px;
+    top: 300px;
     width: 150px;
 }
 
@@ -265,7 +225,6 @@ header {
     width: 500px;
 }
 
-
 .banner {
     background-color: #094194; /* لون الخلفية */
     color: white; /* لون النص */
@@ -275,7 +234,6 @@ header {
     overflow: visible; /* يسمح للصورة بالخروج عن المستطيل */
     margin-top: 50px;
     font-family: "Raleway", sans-serif;
-    
 }
 
 .image-container {
@@ -294,16 +252,15 @@ header {
     margin-left: 400px; /* المسافة من اليسار، يمكنك تعديل القيمة حسب الحاجة */
     text-align: left; /* محاذاة النص إلى اليسار */
     max-width: 700px;
-   
 }
 
-.Discounts-text{
+.Discounts-text {
     font-family: "Londrina Solid", sans-serif;
     margin-left: 400px; 
     text-align: left;
     color: #ba4040;
     font-weight: bold;
-    text-shadow: 1px 1px 0px white,2px 2px 0px white,3px 3px 0px white,2px 2px 0px white,1px 1px 0px white 
+    text-shadow: 1px 1px 0px white, 2px 2px 0px white, 3px 3px 0px white, 2px 2px 0px white, 1px 1px 0px white;
 }
 
 .headingStyle {
@@ -311,69 +268,190 @@ header {
     color: #ba4040;
     font-family: "Londrina Solid", sans-serif;
     font-size: 45px;
-    text-shadow: 1px 1px 0px white,2px 2px 0px white,3px 3px 0px white,2px 2px 0px white,1px 1px 0px white 
-
+    text-shadow: 1px 1px 0px white, 2px 2px 0px white, 3px 3px 0px white, 2px 2px 0px white, 1px 1px 0px white;
 }
-
-
-
 
 .footer {
     text-align: center;
     margin-top: 100px;
 }
 
-
-/* Menu Page*/
+/* Menu Page */
 .menu-title {
     font-size: 200px;
     margin-top: 10px;
     text-shadow: 1px 1px black;
     color: #ffcc00;
     font-family: "Londrina Solid", sans-serif;
-    
 }
-.highlight-menu{
+
+.highlight-menu {
     color: #ba4040;
     font-weight: bold;
     font-family: "Londrina Solid", sans-serif;
     font-size: 45px;
-    text-shadow: 1px 1px 0px white,2px 2px 0px white,3px 3px 0px white,2px 2px 0px white,1px 1px 0px white  
+    text-shadow: 1px 1px 0px white, 2px 2px 0px white, 3px 3px 0px white, 2px 2px 0px white, 1px 1px 0px white;
 }
-.menu-subtitle{
+
+.menu-subtitle {
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 20px;
     font-family: "Ubuntu", sans-serif;
     text-align: center;
 }
+
 .menu-container {
     display: flex;
     justify-content: center;
     gap: 50px;
     margin-top: 20px;
 }
+
 .menu-box {
     border: 6px solid white;
     padding: 20px;
     width: 500px;
-    text-align:center;
+    text-align: center;
     font-size: 18px;
 }
+
 .menu-box h3 {
     text-align: center;
     font-size: 22px;
 }
+
 .menu-item {
     cursor: pointer;
     font-family: "Ubuntu", sans-serif;
     font-weight: bold;
 }
+
 .menu-item:hover {
     text-decoration: underline;
     color: yellow;
 }
 
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    header {
+        padding: 30px; /* تقليل الحشوة */
+    }
+
+    .ann {
+        left: 0; /* إعادة ضبط موضع العناصر */
+        justify-content: center;
+        gap: 20px; /* تقليل المسافة بين العناصر */
+    }
+
+    .navlinks {
+        flex-direction: column; /* تغيير اتجاه الروابط */
+        gap: 20px; /* تقليل المسافة بين الروابط */
+    }
+
+    .home {
+        margin-top: 50px; /* تقليل المسافة العلوية */
+    }
+
+    .container {
+        margin-left: 20px; /* تقليل الهوامش */
+        margin-right: 20px;
+        flex-direction: column; /* تغيير الاتجاه إلى عمودي */
+        align-items: center; /* محاذاة العناصر في الوسط */
+    }
+
+    .krusty-img {
+        width: 100%; /* جعل الصورة تتناسب مع عرض العنصر الأب */
+        margin-left: 0; /* إزالة الهوامش */
+        margin-top: 0; /* إزالة الهوامش */
+    }
+
+    .KrabbyPatty {
+        left: 0; /* إعادة ضبط موضع العنصر */
+        bottom: 200px; /* تعديل الموضع */
+    }
+
+    .content {
+        left: 0; /* إعادة ضبط موضع المحتوى */
+        margin-top: 20px; /* إضافة مساحة علوية */
+        text-align: center; /* محاذاة النص إلى الوسط */
+    }
+
+    .content h2 {
+        font-size: 30px; /* تقليل حجم الخط */
+    }
+
+    .content p {
+        font-size: 20px; /* تقليل حجم الخط */
+    }
+
+    .highlight {
+        font-size: 35px; /* تقليل حجم الخط */
+    }
+
+    .explore-link {
+        right: auto; /* إعادة ضبط الموضع */
+        top: auto; /* إعادة ضبط الموضع */
+        padding-bottom: 20px; /* تقليل المسافة السفلية */
+    }
+
+    .banner-text {
+        margin-left: 0; /* إزالة المسافة اليسارية */
+        max-width: 100%; /* جعل العرض 100% */
+    }
+
+    .Discounts-text {
+        margin-left: 0; /* إزالة المسافة اليسارية */
+    }
+
+    .menu-container {
+        flex-direction: column; /* تغيير الاتجاه إلى عمودي */
+        gap: 20px; /* تقليل المسافة بين صناديق القائمة */
+    }
+
+    .menu-box {
+        width: 100%; /* جعل صناديق القائمة تتناسب مع العرض */
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        min-height: 60vh; /* تقليل الحد الأدنى للارتفاع */
+    }
+
+    .container {
+        margin-left: 10px; /* تقليل الهوامش أكثر */
+    }
+
+    .flower1, .flower2, .flower3 {
+        width: 100px; /* تقليل حجم الزهور */
+    }
+
+    .banner {
+        padding: 10px; /* زيادة الحشوة */
+    }
+
+    .cart-icon {
+        right: 10px; /* تقريب الأيقونة من اليمين */
+        font-size: 30px; /* تقليل حجم الأيقونة */
+    }
+
+    .headingStyle {
+        font-size: 35px; /* تقليل حجم الخط */
+    }
+
+    .menu-title {
+        font-size: 100px; /* تقليل حجم العنوان */
+    }
+
+    .highlight-menu {
+        font-size: 30px; /* تقليل حجم النص المميز */
+    }
+
+    .menu-subtitle {
+        font-size: 20px; /* تقليل حجم العنوان الفرعي */
+    }
+}
 
 
 /* Cart Page*/
